@@ -37,7 +37,6 @@ const Task = ({ text, todo, todos, setTodos, Toggle, openModal, ...props }) => {
             alt="delete symbol"
             border="0"
           />
-          {/* <i className="fas fa-trash"></i> */}
         </button>
         <button className="complete-btn" onClick={completedHandler}>
           <img
