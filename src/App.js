@@ -16,7 +16,8 @@ function App() {
 
   useEffect(() => {
     filterHandler();
-    console.log(filteredData);
+    console.log("filteredData");
+    console.log(filter);
   }, [todos, filter]);
 
   //Functions

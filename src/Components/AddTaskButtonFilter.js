@@ -3,6 +3,7 @@ import Modal from "./Modal";
 
 function AddTaskButtonFilter(props) {
   const statusHandler = (e) => {
+    console.log("chnage"+e.target.value);
     props.setFilter(e.target.value);
   };
   return (
@@ -11,7 +12,7 @@ function AddTaskButtonFilter(props) {
         <button className="addtaskName" onClick={() => props.Toggle()}>
           Add Task
         </button>
-        <select name="filters" id="filters" onClick={statusHandler}>
+        <select name="filters" id="filters" onChange={statusHandler}>
           <option value="all">All</option>
           <option value="incomplete">Incomplete</option>
           <option value="completed">Completed</option>
