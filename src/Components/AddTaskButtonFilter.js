@@ -3,7 +3,7 @@ import Modal from "./Modal";
 
 function AddTaskButtonFilter(props) {
   const statusHandler = (e) => {
-    console.log("chnage"+e.target.value);
+    console.log("chnage"+e.target.value );
     props.setFilter(e.target.value);
   };
   return (
